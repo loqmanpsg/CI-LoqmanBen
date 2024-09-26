@@ -1,7 +1,7 @@
 
 ---
 
-# Cour-H3-CI
+CI-LoqmanBen
 
 This repository contains the code and resources for the **Cour H3** course at Hitema. The project involves setting up a FastAPI application, Docker containers, and continuous integration with GitHub Actions.
 
@@ -24,7 +24,7 @@ This repository contains the code and resources for the **Cour H3** course at Hi
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Gniamor/Cour-H3-CI.git
+   git clone https://github.com/loqmanpsg
    cd Cour-H3-CI
    ```
 
