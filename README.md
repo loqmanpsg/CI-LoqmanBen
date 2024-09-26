@@ -1,56 +1,50 @@
-
----
-
 CI-LoqmanBen
 
-This repository contains the code and resources for the **Cour H3** course at Hitema. The project involves setting up a FastAPI application, Docker containers, and continuous integration with GitHub Actions.
+Ce dépôt héberge le code et les ressources pour le cours Cour H3 à Hitema. Le projet se concentre sur le développement d'une application FastAPI, l'utilisation de conteneurs Docker et la mise en place d'une intégration continue via GitHub Actions.
+Description du projet
 
-## Project Overview
+    FastAPI : Framework web pour le développement d'APIs.
+    PostgreSQL : Configuration de la base de données à l'aide de Docker.
+    PgAdmin : Outil de gestion de bases de données avec PgAdmin4.
+    Docker : Conteneurs utilisés pour exécuter l'application et la base de données.
+    Intégration Continue : Automatisation des tests et des constructions avec GitHub Actions.
 
-- **FastAPI**: A web framework for building APIs.
-- **PostgreSQL**: Database setup with Docker.
-- **PgAdmin**: Database management with PgAdmin4.
-- **Docker**: Application and database run inside containers.
-- **Continuous Integration**: GitHub Actions are used to automate tests and builds.
+Structure du dépôt
 
-## Project Structure
+    app/ : Dossier contenant l'application FastAPI.
+    Dockerfile : Fichier pour définir l'image Docker de l'application FastAPI.
+    docker-compose.yml : Fichier pour orchestrer les applications multi-conteneurs, y compris PostgreSQL et PgAdmin.
+    .github/workflows/ : Dossier avec les configurations pour le pipeline CI/CD.
 
-- `app/`: Contains the FastAPI application.
-- `Dockerfile`: Defines the image for the FastAPI application.
-- `docker-compose.yml`: Orchestrates multi-container applications, including PostgreSQL and PgAdmin.
-- `.github/workflows/`: Contains the CI/CD pipeline configurations.
+Instructions d'installation
 
-## Setup
+Clonez le dépôt :
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/loqmanpsg
-   cd Cour-H3-CI
-   ```
+bash
 
-2. **Run Docker**:
-   ```bash
-   docker-compose up --build
-   ```
+git clone https://github.com/loqmanpsg/CI-LoqmanBen.git
+cd CI-LoqmanBen
 
-3. **Access the application**:
-   - FastAPI: [http://localhost:8000](http://localhost:8000)
-   - PgAdmin: [http://localhost:5050](http://localhost:5050)
+Démarrez Docker :
 
-4. **Run Tests**:
-   Tests are set up to run automatically with GitHub Actions whenever code is pushed to the repository.
+bash
 
-## Requirements
+docker-compose up --build
 
-- Docker
-- Python 3.9+
+    Pour accéder à l'application :
+        FastAPI : http://localhost:8000
+        PgAdmin : http://localhost:5050
 
-## Contributing
+    Exécution des tests : Les tests sont configurés pour s'exécuter automatiquement grâce à GitHub Actions chaque fois qu'un code est intégré dans le dépôt.
 
-Feel free to fork the project and make pull requests to contribute.
+Prérequis
 
-## License
+    Docker
+    Python 3.9 ou version supérieure
 
-This project is open-source and available under the MIT License.
+Contributions
 
----
+Les contributions sont les bienvenues. N'hésitez pas à forker le dépôt et à soumettre des pull requests.
+Licence
+
+Ce projet est disponible en open-source sous la licence MIT.
